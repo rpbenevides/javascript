@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condição</title>
+</head>
+<body>
+    <h1>Sua condição nacional</h1>
+    <p>Digite de que país você é:</p> 
+    <input type="text" id="txtp">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res"> </div>
+
+    <script>
+        function verificar(){
+            var p = window.document.querySelector('input#txtp')
+            var pais = String(p.value)
+            var p2 = pais.toUpperCase()
+            var r = window.document.querySelector('div#res')
+            r.innerHTML = `<p>Se você é do(a) <strong>${p2}</strong>.</p>`
+            if (p2 == 'BRASIL') {
+                r.innerHTML += '<p>Você é <strong>BRASILEIRO</strong>!<p>'}
+            else {
+                r.innerHTML += '<p> Você é <strong>ESTRANGEIRO</strong>!'
+            }
+
+
+            }
+
+    </script>
+
+</body>
+</html>
