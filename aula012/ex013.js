@@ -10,6 +10,7 @@ switch (diaSem){
         break
     case 2: 
         console.log('Terça')
+        break
     case 3:
         console.log('Quarta')
         break
