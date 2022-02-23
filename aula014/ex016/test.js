@@ -1,6 +1,4 @@
-    var a = 0
-    var b = 33
-    var c = 5
-    for(var n = a; n <= b; n+=c) {
-        console.log(n)
+    a = 2
+    for(var n=0; n<= 10; n++){
+        console.log(n*a)
     }
